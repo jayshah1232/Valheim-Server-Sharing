@@ -18,14 +18,17 @@ It helps to have some sort of experience or background with Git and GitHub but i
 
 1. Create a repository on GitHub.
 2. Copy the HTTPS link of the repo. You can find this by clicking the green "Code" button.
-3. Download these scripts and save them to your Valheim worlds folder. The default should be C:\Users\[INSERTUSERNAMEHERE]\AppData\LocalLow\IronGate\Valheim\worlds.
-4. Run the gitsetup.sh script. This should create a local git repository in the folder. Paste the link you copied into the terminal (try right clicking where the cursor is) and press enter.
-5. You can choose to pull the server files now if you manually uploaded them already but you probably haven't so you probably won't.
-6. This will kill the script.
-7. You then want to run the gitpush.sh script. It should tell you what repo you're connected to and then ask for your name. This will help you and your party keep track of who uploaded the files and when.
-8. You should then see the status of the files with any files that were changed. Right now it should show just the 3 files that are related to the server. Enter 'Y'. This should push the server files to the GitHub repository.
-9. Your friends at this point should run gitsetup.sh and they'll be able to pull the server files. At this point, you or any of your friends can launch the game and will have the server available on the list.
-10. Once you guys are done playing, the person who hosted the server should run gitpush.sh.
+3. Download these scripts and the gitignore.txt file and save them to your Valheim worlds folder. The default should be C:\Users\[INSERTUSERNAMEHERE]\AppData\LocalLow\IronGate\Valheim\worlds.
+4. Open the gitignore.txt file and add any server names you don't want to upload for anyone else to have. For example, lets say you had a personal server called MyServer. Add the text MyServer.* as the last item in the file. You can add as many server names in the same way as you want other than the one you want to share.
+5. Save and close the file.
+6. Rename the file from "gitignore.txt" to ".gitignore". This might result in a warning regarding changing extensions but go ahead and click "Yes". We need the extension to change for it to work.
+7. Run the gitsetup.sh script. This should create a local git repository in the folder. Paste the link you copied into the terminal (try right clicking where the cursor is) and press enter.
+8. You can choose to pull the server files now if you manually uploaded them already but you probably haven't so you probably won't.
+9. This will kill the script.
+10. You then want to run the gitpush.sh script. It should tell you what repo you're connected to and then ask for your name. This will help you and your party keep track of who uploaded the files and when.
+11. You should then see the status of the files with any files that were changed. Right now it should show just the 3 files that are related to the server. Enter 'Y'. This should push the server files to the GitHub repository.
+12. Your friends at this point should run gitsetup.sh and they'll be able to pull the server files. At this point, you or any of your friends can launch the game and will have the server available on the list.
+13. Once you guys are done playing, the person who hosted the server should run gitpush.sh.
 
 It will now be a cycle of running gitpull.sh before running the server if you were not the last person who ran it and running gitPush.sh after you exit the game if you were the last one to run it.
 
