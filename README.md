@@ -23,12 +23,11 @@ It helps to have some sort of experience or background with Git and GitHub but i
 5. Save and close the file.
 6. Rename the file from "gitignore.txt" to ".gitignore". This might result in a warning regarding changing extensions but go ahead and click "Yes". We need the extension to change for it to work.
 7. Run the gitsetup.sh script. This should create a local git repository in the folder. Paste the link you copied into the terminal (try right clicking where the cursor is) and press enter.
-8. You can choose to pull the server files now if you manually uploaded them already but you probably haven't so you probably won't.
-9. This will kill the script.
-10. You then want to run the gitpush.sh script. It should tell you what repo you're connected to and then ask for your name. This will help you and your party keep track of who uploaded the files and when.
-11. You should then see the status of the files with any files that were changed. Right now it should show just the 3 files that are related to the server. Enter 'Y'. This should push the server files to the GitHub repository.
-12. Your friends at this point should run gitsetup.sh and they'll be able to pull the server files. At this point, you or any of your friends can launch the game and will have the server available on the list.
-13. Once you guys are done playing, the person who hosted the server should run gitpush.sh.
+8. You can choose to pull the server files now if you manually uploaded them already but you probably haven't so you probably won't need to. This will end the script.
+9. You then want to run the gitpush.sh script. It should tell you what repo you're connected to and then ask for your name. This will help you and your party keep track of who uploaded the files and when.
+10. You should then see the status of the files with any files that were changed. Right now it should show just the 3 files that are related to the server. Enter 'Y'. This should push the server files to the GitHub repository.
+11. Your friends at this point should run gitsetup.sh and they'll be able to pull the server files. At this point, you or any of your friends can launch the game and will have the server available on the list.
+12. Once you guys are done playing, the person who hosted the server should run gitpush.sh.
 
 It will now be a cycle of running gitpull.sh before running the server if you were not the last person who ran it and running gitPush.sh after you exit the game if you were the last one to run it.
 
